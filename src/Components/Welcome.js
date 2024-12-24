@@ -14,7 +14,7 @@ function Welcome() {
 
   // Add state to track which button is clicked
   const [selectedOption, setSelectedOption] = useState("saas");
-  
+
   // Handle SAAS button click
   const handleSaasClick = () => {
     setSelectedOption("saas");
@@ -109,13 +109,13 @@ function Welcome() {
                 <Card
                   style={{
                     width: "10rem",
-                    height: "8rem", 
+                    height: "8rem",
                     boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
                     border: "none",
                     borderRadius: "10px",
                     position: "absolute",
-                    bottom: "-80px", 
-                    right: "-20px", 
+                    bottom: "-80px",
+                    right: "-20px",
                     zIndex: 1,
                   }}
                 >
@@ -183,7 +183,6 @@ function Welcome() {
               className="code"
               style={{ textAlign: "center", marginTop: "20px" }}
             >
-              
               <div
                 style={{
                   display: "flex",
@@ -281,6 +280,15 @@ function Welcome() {
                 </>
               )}
             </div>
+            
+            {/* Add Privacy Policy Text */}
+            <p style={{ marginTop: "20px", fontSize: "0.8rem", color: "#666" }}>
+              By signing up you agree to the{" "}
+              <b privacy-policy style={{ color: "#000000" }}>
+                Privacy Policy
+              </b>
+              .
+            </p>
           </Col>
         </Row>
       </Container>
